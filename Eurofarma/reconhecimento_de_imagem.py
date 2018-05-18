@@ -16,9 +16,7 @@ print(phrase)
 
 teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
 
-print("")
-print(teste)
-print("")
+print("\n"+teste+"\n")
 
 if (phrase == teste):
     print("Deu certo")
