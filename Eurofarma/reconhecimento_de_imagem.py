@@ -8,7 +8,6 @@ Created on Wed May 16 19:51:41 2018
 from PIL import Image
 
 import pytesseract as ocr
-#import shutil
 
 phrase = ocr.image_to_string(Image.open('teste.jpg'), lang='por')
 
@@ -23,7 +22,4 @@ if (phrase == teste):
   
 else:
     print("Negativo")
-    
-#shutil.copy(teste,"/dev/lp0")
-    
         
