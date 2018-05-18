@@ -12,17 +12,17 @@ import pytesseract as ocr
 
 phrase = ocr.image_to_string(Image.open('teste.jpg'), lang='por')
 
-print(phrase)
+print("\nValor Encontrado:\n\n"+phrase)
 
 teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
 
-print("\n"+teste+"\n")
+print("\nValor Testado:\n\n"+teste+"\n\nO Resultado do teste foi:\n")
 
 if (phrase == teste):
-    print("Deu certo")
+    print("Positivo")
   
 else:
-    print("Deu errado")
+    print("Negativo")
     
 #shutil.copy(teste,"/dev/lp0")
     
