@@ -12,52 +12,93 @@ resultadoB = "Aprovado"
 resultadoC = "Aprovado"
 resultadoD = "Aprovado"
 resultadoFinal = "Lote Liberado para Produção"
+#teste='lalala'
 
 html = ("""
-	<p align="center"> 
-	Eurofarma Laboratórios SA
-	</p>
+    
+    <p align="center"> 
+    Eurofarma Laboratórios SA
+    </p>
  
-     <p align="center"> 
-	Relatório de inicio de Produção
-	</p> 
+    <p align="center"> 
+    Relatório de inicio de Produção
+    </p> 
  
-     <p align="left"> 
-	Valor Procurado: """ + teste + """
-	</p>
+    <p align="left"> 
+    Valor Procurado: """ + teste + """
+    </p>
+ 
+    <p></p>
 
-     <p align="left"> 
-	Bolsa Posição A: """ + resultadoA + """
-	</p>
+    <div>
 
-     <p align="center">
-	<img alt="html image example" src="teste.jpg" width="150" height="75">
-	</p>      
+         <div> 
+
+         Bolsa Posição A: """ + resultadoA + """
+
+         </div>
+    
+         <div>
+
+         <img alt="html image example" src="teste.jpg" width="150" height="75">
+
+         </div>      
      
-     <p align="left"> 
-	Bolsa Posição B: """ + resultadoB + """
-	</p>
+     </div>
+     
+     <p></p>
+     
+     <div>
+     
+         <div> 
 
-     <p align="center">
-	<img alt="html image example" src="teste1.jpg" width="150" height="75">
-	</p>  
+         Bolsa Posição B: """ + resultadoB + """
+
+         </div>
+
+         <div>
+         
+         <img alt="html image example" src="teste1.jpg" width="150" height="75">
+         
+         </div>
+         
+     </div>
+     
+     <p></p>
+    
+     <div>
+         <div>
+         
+         Bolsa Posição C: """ + resultadoC + """
+
+         </div>
  
-     <p align="left"> 
-	Bolsa Posição C: """ + resultadoC + """
-	</p>
+         <div>
+         
+         <img alt="html image example" src="teste3.jpg" width="150" height="75">
+
+         </div>
+
+     </div>
+     
+     <p></p>
+     
+     <div>
+
+         <div> 
+         
+         Bolsa Posição D: """ + resultadoD + """
+
+         </div>
  
-     <p align="center">
-	<img alt="html image example" src="teste3.jpg" width="150" height="75">
-	</p>
- 
-     <p align="left"> 
-	Bolsa Posição D: """ + resultadoD + """
-	</p>
- 
-     <p align="center">
-	<img alt="html image example" src="teste2.jpg" width="150" height="75">
-	</p>
- 
+         <div>
+         
+         <img alt="html image example" src="teste2.jpg" width="150" height="75">
+
+         </div>
+
+     </div>
+     
      <p align="left"> 
 	Avaliação Final: """ + resultadoFinal + """
 	</p>

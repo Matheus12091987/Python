@@ -5,25 +5,24 @@ Created on Wed May 30 11:25:39 2018
 @author: matheus
 """
 
-import sqlite3   # Importa o modulo Python que interfaceia com o gerenciador sqlite
- 
-import sys
-import codecs
-import os
 import cups
 
+impressoras = []  #criação de uma lista
+lista_impressoras = []
 
-conn= cups.Connection() #conecta com o cups
-printers = conn.getPrinters () #obtem a lista de nomes de impressoras
-nImp=0
-for printer in printers: # mostra os elementos da lista
-    strImp= str(nImp)
-    ++nImp
-    print ("(" + strImp + ")" + printer, printers[printer]["device-uri"])
+conn = cups.Connection ()
+printers = conn.getPrinters ()
+
+acumulador = 0
+
+print("Área para seleção de impressora padrão do Sistema de Inspeção e Liberação de Produção\n\nImpressoras disponíveis!!!\n\n")
+
+for printer in printers:
+    impressoras = (printer, printers[printer]["device-uri"])
+    print("[ " + str(acumulador) + " ] " + impressoras[0]) 
+    lista_impressoras.append(impressoras[0])
+    acumulador+=1
     
-    
-strSelImp = input("Impressora: ")
+numero_impressora = int(input("Selecione qual impressora que utilizar: "))
 
-printer_name= printers.keys()[int(strSelImp)]
-
-conn.printFile(printer_name, 'pdfReport.pdf', 'pdfReport.pdf', {})
+conn.printFile(lista_impressoras[numero_impressora], 'pdfReport.pdf', 'Eurofarma Laboratórios', {})
