@@ -14,11 +14,14 @@ resultadoD = "Aprovado"
 resultadoFinal = "Lote Liberado para Produção"
 #teste='lalala'
 
-html = ("""<head>Pagina 1 de 1</head>
-<p align="center"><h1>Eurofarma Laboratórios SA</h1></p>
+html = ("""<p align="right"><head>Pagina 1 de 1</head></p>
+<p  align="center"><h1>Eurofarma Laboratórios SA</h1></p>
 <p align="center"><h2>Relatório de Início de Produção</h2></p>
-<p align="left">  Valor Procurado: """ + teste + """</p>
-<p></p>
+<p align="left">  Valor Procurado: </p>
+<p>                                        """+Lote+"""</p>
+<p>                                        """+Fabricação+"""</p>
+<p>                                        """+Validade+"""</p>
+<p></p><p></p>
 <div>
 <div><div>Bolsa Posição A: """ + resultadoA + """                                                                      </div>
 <div><img alt="html image example" src="teste.jpg" width="150" height="75"></div>

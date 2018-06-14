@@ -23,6 +23,6 @@ for printer in printers:
     lista_impressoras.append(impressoras[0])
     acumulador+=1
     
-numero_impressora = int(input("Selecione qual impressora que utilizar: "))
+numero_impressora = int(input("Selecione qual impressora que utilizar(Apenas o Numero): "))
 
 conn.printFile(lista_impressoras[numero_impressora], 'pdfReport.pdf', 'Eurofarma Laboratórios', {})

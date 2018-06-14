@@ -13,7 +13,8 @@ phrase = ocr.image_to_string(Image.open('teste.jpg'), lang='por')
 
 print("\nValor Encontrado:\n\n"+phrase)
 
-teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
+teste = (Lote + "\n" + Fabricação + "\n" + Validade)
+#teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
 
 print("\nValor Testado:\n\n"+teste+"\n\nO Resultado do teste foi:\n")
 
