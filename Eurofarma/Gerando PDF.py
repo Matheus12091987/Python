@@ -14,9 +14,12 @@ resultadoD = "Aprovado"
 resultadoFinal = "Lote Liberado para Produção"
 #teste='lalala'
 
-html = ("""<p align="right"><head>Pagina 1 de 1</head></p>
-<p  align="center"><h1>Eurofarma Laboratórios SA</h1></p>
-<p align="center"><h2>Relatório de Início de Produção</h2></p>
+
+
+html = ("""<p align="right">Pagina 1 de 1</p>
+<p  align="center"><font size="22">Eurofarma Laboratórios SA</font></p>
+<p align="center"><font size="18">Relatório de Início de Produção</font></p>
+<p><p></p></p>
 <p align="left">  Valor Procurado: </p>
 <p>                                        """+Lote+"""</p>
 <p>                                        """+Fabricação+"""</p>
@@ -46,6 +49,7 @@ html = ("""<p align="right"><head>Pagina 1 de 1</head></p>
 <p></p><p></p>
 <p align="left">	______________________                                                                              ______________________     </p>
 <p align="left">	  Assinatura do Operador                                                                             Assinatura do Lider do Processo</p>""")
+
 
 class MyFPDF(FPDF, HTMLMixin):
     pass
