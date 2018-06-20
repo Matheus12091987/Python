@@ -7,7 +7,7 @@ Created on Wed May 30 08:49:32 2018
 
 from fpdf import FPDF, HTMLMixin
 
-resultadoA = "RAprovado"
+resultadoA = "Aprovado"
 resultadoB = "Aprovado"
 resultadoC = "Aprovado"
 resultadoD = "Aprovado"
