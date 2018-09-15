@@ -8,13 +8,15 @@ Created on Wed May 16 19:51:41 2018
 from PIL import Image
 
 import pytesseract as ocr
+#import pytesseract
 
 phrase = ocr.image_to_string(Image.open('teste.jpg'), lang='por')
+#phrase = pytesseract.image_to_string(Image.open('teste.jpg'), lang='por')
 
 print("\nValor Encontrado:\n\n"+phrase)
 
-teste = (Lote + "\n" + Fabricação + "\n" + Validade)
-#teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
+#teste = (Lote + "\n" + Fabricação + "\n" + Validade)
+teste = ('LOTE: 560568\nDATA FAB: 05/18\nDATA VAL: 05/20')
 
 print("\nValor Testado:\n\n"+teste+"\n\nO Resultado do teste foi:\n")
 
