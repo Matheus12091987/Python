@@ -1,0 +1,19 @@
+pip install django                          //instalando django
+django-admin --version                      //verifica a versão do django
+
+django-admin.py startproject site_blog      //cria a pasta chamado site_blog
+dir                                         //verifica os diretórios da pasta
+cd .\site_blog\                             //abre a pasta site_blog
+
+python .\manage.py runserver                //inicia o servidor do django
+http://localhost:8000/                      //abrir no navegador tela inicial do django (boas vindas)
+
+alterar na settings.py
+
+python manage.py migrate                    //criar o banco de dados
+
+python manage.py startapp blog              //Criando o app
+
+
+
+python manage.py createsuperuser            //Criando um usuario e senha para o acesso admin
