@@ -1,3 +1,0 @@
-Para abrir o spyder com o Anaconda
-
-.config/spyder
